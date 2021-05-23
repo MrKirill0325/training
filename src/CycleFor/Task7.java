@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class Task7 {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        int number, c, b;
 
         System.out.println("Старт");
 
@@ -78,7 +77,7 @@ public class Task7 {
         System.out.println("Введите число");
         int x = scan.nextInt();
 
-        for (c=0;c<17;c++){
+        for (int c=0;c<17;c++){
             System.out.print(x+1+" ");
             x=x+1;
         }
