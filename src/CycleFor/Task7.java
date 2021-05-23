@@ -79,7 +79,7 @@ public class Task7 {
         int x = scan.nextInt();
 
         for (c=0;c<17;c++){
-            System.out.println(x+1);
+            System.out.print(x+1+" ");
             x=x+1;
         }
 
