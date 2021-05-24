@@ -12,19 +12,19 @@ import java.util.Random;
 public class Task11 {
     public static void main (String[] args){
 
-        int q,w,e,count=0;
+        int valueOne,valueTwo,result,count=0;
 
         for (int a=10;a<100;a++) {
 
-            q=a/10;
-            w=a%10;
+            valueOne=a/10;
+            valueTwo=a%10;
 
-            if (q>w){
-                e=q-w;
+            if (valueOne>valueTwo){
+                result=valueOne-valueTwo;
             } else {
-                e=w-q;
+                result=valueTwo-valueOne;
             }
-            if (e<=3){
+            if (result<=3){
                 System.out.print(a+" ");
                 count++;
             }
