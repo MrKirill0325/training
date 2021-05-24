@@ -13,7 +13,7 @@ public class Task8 {
 
         int input, score=0;
 
-        for (int a = 0;a<15;a++) {
+        for (int a = 0;a<10;a++) {
             input = scan.nextInt();
             if (input>0) {
                 score++;
