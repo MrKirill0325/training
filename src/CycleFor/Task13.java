@@ -18,8 +18,6 @@ public class Task13 {
         for (int a=0;a<30;a++) {
             push = random.nextInt(max-min+1)+min;
 
-            push+=push;
-
             System.out.print(push+" ");
             if (push>0 || push==0){
                 countFirst++;
