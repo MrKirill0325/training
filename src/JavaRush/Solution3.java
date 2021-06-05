@@ -40,29 +40,37 @@ public class Solution3 {
 
 
 /*
-public class Solution3 {
+РЕШЕНИЕ  JAVARUSH
+package JavaRush;
+
+import java.util.Scanner;
+
+public class Solution3_1 {
     public static String[] strings;
 
     public static void main(String[] args) {
-        //заполнение массива
-        strings = new String[10];
-        Scanner scan = new Scanner(System.in);
-        for (int i = 0; i < 10; i++) {
-            strings[i] = scan.nextLine();
+        Scanner scanner = new Scanner(System.in);
+
+        strings = new String[6];
+        for (int i = 0; i < 6; i++) {
+            strings[i] = scanner.nextLine();
         }
-        //удаление дублей
-        for (int i = 0; i < 10; i++) { //хватать ячейку массива
-            for (int x = 0; x < 10; x++) { //сравнивать её с оставшимися ячейками поочередно
-                if (i != x && strings[i] != null && strings[x] != null && strings[i].equals(strings[x])) { //и если это дубль,
-                    //удалить дубли
+
+        for (int i = 0; i < strings.length; i++) {
+            String currentString = strings[i];
+            for (int j = i + 1; j < strings.length; j++) {
+                if (currentString == null) {
+                    break;
+                }
+                if (currentString.equals(strings[j])) {
+                    strings[j] = null;
                     strings[i] = null;
-                    strings[x] = null;
                 }
             }
-
         }
-//       Arrays.stream(strings).forEach(System.out::println);
-        System.out.println(Arrays.toString(strings));
+        for (int i = 0; i < strings.length; i++) {
+            System.out.print(strings[i] + ", ");
+        }
     }
 }
 */
