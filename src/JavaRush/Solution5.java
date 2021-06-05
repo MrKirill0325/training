@@ -9,10 +9,10 @@ public class Solution5 {
 
     public static void main (String[] args){
 
-        int N=scanner.nextInt();
+        int n=scanner.nextInt();
 
-        multiArray = new int[N][];
-        for (int i=0; i<N;i++){
+        multiArray = new int[n][];
+        for (int i=0; i<n;i++){
             int numberColumn = scanner.nextInt();
             multiArray[i] = new int [numberColumn];
         }
