@@ -13,7 +13,8 @@ public class Solution7 {
 
     public static void main(String[] args) {
 
-        if (Arrays.deepEquals(arrayFirst,arraySecond)){ // метод Arrays.deepEquals(obj1,obj2) для сравнения двумерных массивов
+        if (Arrays.deepEquals(arrayFirst,arraySecond)){
+            // метод Arrays.deepEquals(obj1,obj2) для сравнения двумерных массивов
             System.out.println("true");
         } else {
             System.out.println("false");
